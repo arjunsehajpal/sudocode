@@ -1,0 +1,11 @@
+# byte compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.vscode
