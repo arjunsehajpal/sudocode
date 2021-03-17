@@ -97,24 +97,3 @@ class Sudoku(object):
                     row += "|"
                 row += str(sdk_arr[i][j]) + " "
             print(row)
-
-
-
-if __name__=="__main__":
-    sudoku_sample =    [[0, 6, 8, 0, 0, 0, 0, 0, 0], 
-                        [7, 0, 0, 8, 0, 3, 0, 0, 5], 
-                        [1, 3, 0, 0, 0, 0, 2, 4, 0], 
-                        [4, 0, 0, 0, 2, 0, 0, 3, 0], 
-                        [0, 0, 9, 3, 7, 4, 8, 0, 0], 
-                        [0, 8, 0, 0, 9, 0, 0, 0, 7], 
-                        [0, 4, 2, 0, 0, 0, 0, 8, 6], 
-                        [8, 0, 0, 6, 0, 7, 0, 0, 4], 
-                        [0, 0, 0, 0, 0, 0, 5, 1, 0]]
-
-    sdk_obj = Sudoku(sudoku_sample)
-    print("Unsolved:->", end = "")
-    sdk_obj.print_sudoku(sudoku_sample)
-
-    print("\nSolved:->", end = "")
-    result = sdk_obj.get_solution()
-    sdk_obj.print_sudoku(result)
