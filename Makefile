@@ -1,2 +1,2 @@
-sudoku:
-	python3 src/sudoku.py
+test:
+	python3 -m pytest -v
